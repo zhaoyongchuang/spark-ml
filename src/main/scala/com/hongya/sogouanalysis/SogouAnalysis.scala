@@ -10,8 +10,6 @@ import java.util
 object SogouAnalysis {
 
   // 定义main方法，实现数据读取
-
-
   def main(args: Array[String]): Unit = {
     // 创建SparkContext对象
     val sparkConf: SparkConf = new SparkConf()
@@ -21,6 +19,7 @@ object SogouAnalysis {
     sc.setLogLevel("WARN")
 
     // TODO: 1. 本地读取SogouQ用户查询日志数据
+
     val rawLogsRDD: RDD[String] = sc.textFile("src/main/scala/com/hongya/sogouanalysis/sougou.csv")
     //println(s"Count = ${rawLogsRDD.count()}")
 
@@ -112,7 +111,7 @@ object SogouAnalysis {
     hourSearchRDD.take(10).foreach(println)
     // 释放缓存数据
     recordsRDD.unpersist()
-
+    // 关闭资源
     // 应用结束，关闭资源
     sc.stop()
   }
