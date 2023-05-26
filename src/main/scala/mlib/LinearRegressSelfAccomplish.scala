@@ -6,6 +6,10 @@ import org.jblas.DoubleMatrix
 
 object LinearRegressSelfAccomplish {
   def main(args: Array[String]): Unit = {
+    val conf = new org.apache.spark.SparkConf().setAppName("wordcount").setMaster("local[*]")
+    val sc = new org.apache.spark.SparkContext(conf)
+
+
     val path = "D:\\spark-master\\data\\mllib\\sample_linear_regression_data.txt"
     val Linear = new LinearRegressSelf()
     val data: RDD[LabeledPoint] = Linear.loaddata(path)

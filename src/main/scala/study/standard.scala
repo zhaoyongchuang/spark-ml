@@ -9,7 +9,7 @@ object standard {
     val spark: SparkSession = SparkSession
       .builder()
       .appName("spark_scaler")
-      .master("local[4]")
+      .master("local[*]")
       .getOrCreate()
     val dataframe = spark.read.format("libsvm").load("data/mllib/sample_libsvm_data.txt")
     val scaler = new StandardScaler()

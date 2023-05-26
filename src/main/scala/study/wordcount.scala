@@ -19,6 +19,9 @@ object wordcount {
     val sort_value = count.sortBy(_._2, false).take(10)
     println(sort_value.toBuffer)
 
+//    将Hbase scan数据导出到本地文件并命名为/root/spark_iot.csv
+
+
   }
 }
 
