@@ -1,4 +1,0 @@
-1,zhangsan,male,15
-2,lisi,male,15
-3,lihua,female,17
-4,liyi,female,16
