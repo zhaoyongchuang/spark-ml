@@ -1,3 +1,8 @@
 tom,java,95
 tom,c,96
 jerry,java,99
+tom,python,100
+zyc,java,100
+zyc,python,999
+zyc,scala,99
+zyc,c++,99

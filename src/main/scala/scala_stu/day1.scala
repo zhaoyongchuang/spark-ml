@@ -39,7 +39,18 @@ object day1 {
     def add3(a:Int,b:Int)={a+b}
     def add4(a:Int)(b:Int)=a+b
 
-    def f() = 8
-    println(f)
+//    def f() = 8
+//    println(f)
+//
+//
+//
+//    for(i <- 1 to 10){
+//      println(i)
+//    }
+//    val k:Long = 4
+//    val a =10
+
+
+
   }
 }

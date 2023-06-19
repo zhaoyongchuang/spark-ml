@@ -14,13 +14,9 @@ object face_to_hanshu {
     var fp3=(x:String)=>("fp3 hello"+x)
     println(fp3("zyc"))
 //    高阶函数-把函数作为参数传递给另外一个函数，函数类型的形参
-
     def function1(string: String,m:(String=>Unit)): Unit ={
       m(string)
     }
-
-
-
     def function2(string: String,fp:(String=>String))={
       fp(string)
 //      fp("test"+string)

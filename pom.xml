@@ -47,6 +47,14 @@
     </dependency>
 
 
+    <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-hive -->
+    <dependency>
+        <groupId>org.apache.spark</groupId>
+        <artifactId>spark-hive_2.11</artifactId>
+        <version>2.4.6</version>
+    </dependency>
+
+
     <dependency>
         <groupId>net.minidev</groupId>
         <artifactId>json-smart</artifactId>

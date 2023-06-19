@@ -13,10 +13,8 @@ object sql002 {
       .json("src/main/scala/sql_stu/name.json")
     val df1 = rdd1.toDF()
     df1.show()
-
     df1.createOrReplaceTempView("name_score")
     val res1 = spark.sql("select * from name_score where score>100")
     res1.show()
   }
-
 }
