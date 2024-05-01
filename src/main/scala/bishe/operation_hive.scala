@@ -9,8 +9,7 @@ object operation_hive {
       .enableHiveSupport()
       .getOrCreate()
     //    读取hive表数据
-    val data = spark.sql("select * from tv_log_ods.tv_log_ods_table limit 10")
-    data.show(10)
+    val data = spark.sql("select * from tv_log_ods.tv_log_ods_table limit 10").show()
     spark.stop()
   }
 }
